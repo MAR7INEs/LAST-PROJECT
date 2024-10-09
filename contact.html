@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="تماس با مجلات آرتین" />
+    <title>تماس با ما - مجلات آرتین</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <style>
+        body {
+            direction: rtl; /* تنظیم راست به چپ */
+        }
+        .contact-info {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-4">
+        <h1>تماس با ما</h1>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="home.html">خانه</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">درباره ما</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">خدمات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">تماس با ما</a>
+                        </li>
+                    </ul>
+                </div>                
+            </div>
+        </nav>
+    </header>    
+    <main class="container mt-5">        
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">نام</label>
+                <input type="text" class="form-control" id="name" required />
+            </div>
+            <div class="form-group">
+                <label for="email">ایمیل</label>
+                <input type="email" class="form-control" id="email" required />
+            </div>
+            <div class="form-group">
+                <label for="message">پیام</label>
+                <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">ارسال</button>
+        </form>        
+        <div class="contact-info">
+            <h5>اطلاعات تماس</h5>
+            <p>ایمیل: <a href="mailto:artinart594@gmail.com">artinart594@gmail.com</a></p>
+            <p>تلفن: <a href="tel:09128469704">09128469704</a></p>
+            <p>آدرس:مجیدیه جنوبی تهران</p>
+        </div>
+    </main>
+    <footer class="bg-dark text-white pt-4">
+        <div class="container text-center">
+            <p>&copy; 2024 مجلات آرتین. همه حقوق محفوظ است.</p>
+        </div>
+    </footer>    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>       
+        document.getElementById('contactForm').onsubmit = function(event) {
+            event.preventDefault(); 
+            alert('پیام شما با موفقیت ارسال شد!');            
+        };
+    </script>
+</body>
+</html>
